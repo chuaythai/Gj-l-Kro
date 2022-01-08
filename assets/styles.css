@@ -1,6 +1,326 @@
-body {
-     background-color: crimson;
+/* CSS for Gjol Kro Restaurant */
+
+:root {
+     background-color: #0B1938;
+     background-color: #C8AE67;
+     background-color: #3A4A48;
+     background-color: #2F2220;
+     background-color: #F7F4E2;
+     font-family: 'Roboto', sans-serif;
 }
-.balazs {
-     color: hotpink;
+body, html {
+     height: 100%;
+     margin: 0;
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
 }
+
+/* Nav*/
+#top-logo {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 25px;
+}
+
+nav {
+     display: flex;
+     justify-content: center;
+}
+
+nav li {
+display: inline;
+float: left;
+list-style-type: none;
+margin-right: 3vw;
+text-transform: capitalize;
+}
+
+nav li>a {
+     text-decoration: none;
+}
+
+nav>ul>li>a {
+     text-transform: uppercase;
+}
+
+nav>ul>li>a:hover {
+     text-decoration: underline;
+     color: #C8AE67;
+     transition: all 0.3s ease;     
+}
+
+#landing-image {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+/* main section*/
+
+.welcome {
+     font-size: 22px;
+     text-align: center;
+     margin: 0 auto;
+     margin-bottom: 100px;
+     padding: 10px;
+     width: 80vw;
+     border-style: double;
+     border-color: rgb(129, 110, 0);
+     border-width: 5px;
+     
+}
+
+
+.welcome>h1 {
+     padding-top: 10px;
+     }
+
+
+h1 {
+     font-weight: 200;
+}
+
+button {
+     background-color: #C8AE67;
+     border-radius: 30px;
+     height: 45px;
+     width: 180px;
+     text-transform: uppercase;
+     border-color:#C8AE67;
+}
+
+button:hover{
+     background-color: #645835;
+     border-width: 5px;
+     transition: all 0.3s ease;
+     color:white;
+}
+
+
+/* Grid*/
+
+.grid-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: 
+     "content1 content2"
+     "content3 content4"
+     "content5 content6";
+     grid-gap: 0;
+     text-align: center;
+     color: #000;
+}
+
+.grid-section>p {
+     margin-top: 150px;
+     margin-left: 25%;
+     width: 50%;
+     font-size: 33px;
+     text-align: left;
+     
+
+}
+
+#content1 {
+     grid-area: content1;
+}
+
+#content2 {
+     grid-area: content2;
+
+}
+
+#content3 {
+     grid-area: content3;
+}
+
+#content4 {
+     grid-area: content4;
+}
+
+#content5 {
+     grid-area: content5;
+}
+
+#content6 {
+     grid-area: content6;
+}
+
+
+/* history*/
+
+.history {
+     width: 99vw;
+     height: 100vh;
+     background-color: #C8AE67;
+}
+
+.history-text1{
+     width: 50vw;
+     height: 40vh;
+     margin-left: 50px;
+     padding-top: 100px;
+     font-size: 33px;
+}
+
+.history-text2{
+     width: 50vw;
+     height: 40vh;
+     margin-left: 50px;
+     margin-top: 60px;
+     font-size: 22px;
+}
+
+.history-image{
+     background-image: url(images/img1.png);
+     width: 40vw;
+     height: 100vh;
+     float:right;
+}
+
+/* Promotion*/
+
+.promotion{
+     height: 95vh;
+     width: 100vw;
+     background-color: #3A4A48;
+     margin:0;  
+}
+.promotion>.potato{
+     margin-top: 30px;
+     margin-left: 30px;
+}
+
+/* Reservations*/
+
+.reservations-events {
+     display: grid;
+     grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+     grid-template-rows: auto;
+     grid-template-areas: "card card card card";
+     width: 100vw;
+     height: 70vh;
+     background-color: #C8AE67;
+}
+.card{
+     margin: 0 auto;
+     padding-top: 20%;
+}
+
+#wine{
+     padding-top: 40%;
+}
+#mushroom{
+     padding-top: 30%;
+     padding-left: 10%;
+}
+
+.reservations-events button{
+     margin-top: 30px;
+     background-color: #2F2220;
+     color: white;
+}
+#book-us{
+     margin-top:65px;
+}
+
+h2{
+     font-size: 2.5rem;
+     color: #2F2220;
+     text-transform: uppercase;
+}
+
+/* Footer */
+
+.container{
+     width: 100vw;
+     background-color: #2F2220;
+     margin:auto;
+ }
+ .row{
+     display:flex;
+     flex-wrap:wrap;
+ }
+ .footer-col ul{
+     list-style-type:none;
+ }
+ .footer-col a{
+      text-decoration: none;
+ }
+ .footer-col a h4:hover{
+      padding-left: 8px;
+      transition: all 0.3s ease;
+}
+ .footer{
+     background-color:#2F2220;
+     padding: 30px 0;
+ }
+ .footer-col{
+     width: 18%;
+     padding: 0 15px;
+ }
+ .footer-col h4{
+     font-size: 18px;
+     margin-left: 38px;
+     text-transform: capitalize;
+     color: white;
+     margin-bottom:30px;
+     position: relative;
+ }
+ .footer-col h4::before{
+      content: "";
+     position: absolute;
+     left:0;
+     bottom:-10px;
+     background-color: white;
+     height: 2px;
+     box-sizing: border-box;
+     width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+     margin-bottom: 10px;
+ }
+ .footer-col ul li a{
+     font-size: 16px;
+     text-transform: capitalize;
+     color: white;
+     text-decoration: none;
+     display: block;
+     transition: all 0.3s ease;
+ }
+ .footer ul li a:hover {
+      color:white;
+      padding-left: 8px;
+ }
+ .footer-col .social-links a{
+     display: inline-block;
+     height: 50px;
+     width: 50px;
+     background-color: white;
+     margin: 0 15px 20px 0;
+     text-align: center ;
+     line-height: 50px;
+     border-radius: 50%;
+     color: black;
+     transition: all 0.5s ease;
+ }
+ .footer-col .social-links a:hover{
+     color: black;
+     background-color: #C8AE67;
+ }
+ 
+ /*responsive*/
+ @media(max-width: 767px){
+     .footer-col {
+         width: 50%;
+         margin-bottom:30px;
+     }
+ }
+ @media(max-width: 574px){
+     .footer-col {
+         width: 100%;
+     }
+ }
+ 
