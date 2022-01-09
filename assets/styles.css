@@ -43,6 +43,7 @@ nav li>a {
 
 nav>ul>li>a {
      text-transform: uppercase;
+     color:rgb(0, 0, 0);
 }
 
 nav>ul>li>a:hover {
@@ -98,6 +99,118 @@ button:hover{
      color:white;
 }
 
+/*reservation page*/
+
+#reservation  {
+     font-family: 'Roboto Slab', serif;
+     font-size: 40px;
+     text-align: center;
+     color:#000000 ;
+     font-weight: 700;
+     text-decoration: none;   
+ }
+.container2 img {
+     width: 450px;
+   }
+ 
+.container2 {
+     background-color: #3A4A48;
+     margin-top: 5px;
+     margin-right: 100px;
+     margin-bottom: 100px;
+     margin-left: 100px;
+     box-shadow: 10px 15px 20px rgba(0, 0, 0, .5);
+     display: grid;
+     grid-template-columns: 40% 60%;
+    
+}
+ 
+#book  {
+     font-family: 'Roboto Slab', serif;
+     font-size: 25px;
+     padding-left: 240px;
+     color:#F7F4E2 ;
+     font-weight: 5;
+     text-decoration: none;   
+     
+ }
+
+ #event {
+     font-family: 'Roboto Slab', serif;
+     font-size: 25px;
+     padding-left: 240px;
+     color:#F7F4E2 ;
+     font-weight: 5;
+     text-decoration: none;
+ }
+
+ #book:hover{
+     color: #C8AE67;
+     transition-duration: 0.3s;
+     text-decoration: underline;
+ }
+        
+ #event:hover{
+     color: #C8AE67;
+     transition-duration: 0.3s;
+     text-decoration: underline;
+ }
+
+ #section {
+     font-family: 'Roboto Slab', serif;
+     font-size: 20px;
+     padding-left: 240px;
+     color:#F7F4E2 ;
+     font-weight: 5;
+     text-decoration: none;
+ }
+
+
+ .container2-form {
+     padding: 50px 40px 0px 10px;
+     margin:  20px ;
+     color: #F7F4E2;
+ }
+ 
+ form {
+     display: grid;
+     grid-row-gap: 25px;
+ }
+ 
+ .form-field p {
+     font-weight: 600;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .form-field {
+     font-family: 'Roboto', sans-serif;
+     display: flex;
+     padding-left: 100px;
+     justify-content: space-between;
+ }
+                     
+ .form-field input,select {
+     padding: 10px 15px;
+ }
+ 
+ .container2 textarea {
+     padding: 10px 15px;
+ }
+ .container2 .button {
+     font-size: 25px;
+     font-family: 'Roboto Slab', serif;
+     color: #3A4A48;
+     background-color:#F7F4E2;
+     cursor: pointer;
+     transition-duration: 0.4s;
+    
+ }
+.button:hover {
+     color: #F7F4E2;
+     background:#3A4A48;
+ }
+                     
+                                
 
 /* Grid*/
 
@@ -193,7 +306,7 @@ button:hover{
      margin-left: 30px;
 }
 
-/* Reservations*/
+/*Reservations*/
 
 .reservations-events {
      display: grid;
