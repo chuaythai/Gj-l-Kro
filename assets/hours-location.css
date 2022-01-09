@@ -1,0 +1,67 @@
+/* Hours & Location */
+
+.hours_location {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+}
+
+.adress {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    font-weight: lighter;
+}
+ 
+.adress2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    font-weight: lighter ;
+}
+
+.opening_hours {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: lighter ;
+}
+
+.map_holder {
+    width: 100%;
+    padding-top: 50px;
+    position: relative;
+}
+
+.direction_button, .direction_button:hover {
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+    z-index: 0;
+    background-color: #3A4A48; 
+    border: none;
+    color: #F7F4E2;
+    padding: 18px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.direction_button:hover {
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
