@@ -124,24 +124,47 @@ button:hover{
      grid-template-columns: 40% 60%;
     
 }
- 
+.options, nav li {
+     display: inline;
+    
+}
+
+.options2, nav li {
+     display: inline;
+   
+}
+.options,.options2,   nav li>a {
+               text-decoration: none;
+          }
+          
+          
+ .options2,.options,  nav>ul>li>a:hover {
+     text-decoration: underline;
+     color: #C8AE67;
+     transition: all 0.3s ease;     
+}
+          
+
+
 #book  {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
-     padding-left: 240px;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;   
-     
+     display: inline-block;
+     margin-left: 5vw;
+     padding-left: 5vw;
  }
 
  #event {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
-     padding-left: 240px;
+     margin-left: 5vw;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
+     display: inline-block;
  }
 
  #book:hover{
@@ -156,14 +179,19 @@ button:hover{
      text-decoration: underline;
  }
 
- #section {
+ #name, #date, #people, #time, #email, #notes   {
      font-family: 'Roboto Slab', serif;
      font-size: 20px;
-     padding-left: 240px;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
+
  }
+
+ .form-field > #time {
+     margin-top: 150px ;
+    }
+
 
 
  .container2-form {
@@ -174,7 +202,6 @@ button:hover{
  
  form {
      display: grid;
-     grid-row-gap: 25px;
  }
  
  .form-field p {
@@ -184,17 +211,17 @@ button:hover{
  
  .form-field {
      font-family: 'Roboto', sans-serif;
-     display: flex;
+     display: inline-block;
      padding-left: 100px;
-     justify-content: space-between;
+
  }
                      
  .form-field input,select {
-     padding: 10px 15px;
+     padding: 5px 5px;
  }
  
  .container2 textarea {
-     padding: 10px 15px;
+     padding: 5px 5px 150px 10px;
  }
  .container2 .button {
      font-size: 25px;
