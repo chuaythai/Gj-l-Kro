@@ -6,7 +6,6 @@
      background-color: #3A4A48;
      background-color: #2F2220;
      background-color: #F7F4E2;
-     font-family: 'Roboto', sans-serif;
 }
 body, html {
      height: 100%;
@@ -14,6 +13,7 @@ body, html {
      margin:0;
      padding:0;
      box-sizing: border-box;
+     font-family: 'Roboto slab', serif;
 }
 
 /* Nav*/
@@ -62,11 +62,14 @@ nav>ul>li>a:hover {
 
 .welcome {
      font-size: 22px;
+     font-weight: 300;
      text-align: center;
      margin: 0 auto;
      margin-bottom: 100px;
-     padding: 10px;
+     padding-right: 20px;
+     padding-left: 20px;
      width: 80vw;
+     padding-bottom: 50px;
      border-style: double;
      border-color: rgb(129, 110, 0);
      border-width: 5px;
@@ -76,6 +79,7 @@ nav>ul>li>a:hover {
 
 .welcome>h1 {
      padding-top: 10px;
+     font-weight: 400;
      }
 
 
@@ -85,18 +89,21 @@ h1 {
 
 button {
      background-color: #C8AE67;
-     border-radius: 30px;
+     border-style: groove;
+     border-radius: 15px;
      height: 45px;
      width: 180px;
      text-transform: uppercase;
      border-color:#C8AE67;
+     margin: 0 auto;
 }
 
 button:hover{
-     background-color: #645835;
+     background-color: #af944b;
      border-width: 5px;
      transition: all 0.3s ease;
-     color:white;
+     color:black;
+     cursor: pointer;
 }
 
 /*reservation page*/
