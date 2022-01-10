@@ -152,7 +152,6 @@ button:hover{
 }
           
 
-
 #book  {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
@@ -160,14 +159,14 @@ button:hover{
      font-weight: 5;
      text-decoration: none;   
      display: inline-block;
-     margin-left: 5vw;
+     margin-left: 5.5vw;
      padding-left: 5vw;
  }
 
  #event {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
-     margin-left: 5vw;
+     margin-left: 4.5vw;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
@@ -192,19 +191,67 @@ button:hover{
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
-
+     display: inline;
+ 
  }
 
- .form-field > #time {
-     margin-top: 150px ;
-    }
+ #time { 
+     margin-top: -5.3vw;
+     margin-left: 14.5vw;  
+}
+
+#clock { 
+     margin-top: -0.5vw;
+     margin-left: 14vw; 
+     }
 
 
+#date { 
+     margin-left: 4vw;     
+}
+
+#people { 
+     margin-top: -5.3vw;
+     margin-left: 30.5vw;  
+}
+#number { 
+margin-top: -2vw;
+margin-left: 30vw;  
+   
+}
+#name { 
+     margin-left: 3.5vw; 
+     margin-top: 1.5vw;
+           
+ }
+
+#fullname { 
+     margin-top: -1.79vw; 
+     }
+
+
+ #email { 
+     margin-left: 4.2vw;  
+     margin-top: -1.5vw;    
+}
+
+#email-adresse{ 
+     margin-left: 3.5vw;  
+     margin-top: -1.79vw; 
+}
+
+
+
+ .form-field > #time,#name, #date, #people, #email, #notes{
+      display: flex;
+      
+      
+}
 
  .container2-form {
      padding: 50px 40px 0px 10px;
      margin:  20px ;
-     color: #F7F4E2;
+     color: #F7F4E2; 
  }
  
  form {
@@ -220,17 +267,31 @@ button:hover{
      font-family: 'Roboto', sans-serif;
      display: inline-block;
      padding-left: 100px;
+     background-color: #3A4A48;
 
  }
                      
  .form-field input,select {
-     padding: 5px 5px;
+     font-family: 'Roboto', sans-serif;
+     color: #F7F4E2;
+     background-color: #3A4A48;
  }
- 
+
+
  .container2 textarea {
-     padding: 5px 5px 150px 10px;
+     padding: 1vw 24vw 15vw 1vw;
+     font-family: 'Roboto', sans-serif;
+     font-size: 1vw;
+     background-color: #3A4A48;
  }
+
+ #notes { 
+     margin-left: 15vw;
+           
+     }
  .container2 .button {
+      margin-top: 3vw;
+      margin-left: 20vw;
      font-size: 25px;
      font-family: 'Roboto Slab', serif;
      color: #3A4A48;
@@ -519,8 +580,6 @@ nav>ul>li>a:hover {
  
 
  
- 
-   
  .p1 {
      font-family: roboto slab;
      font-weight: bold;
