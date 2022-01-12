@@ -35,24 +35,29 @@
                 <a href="#">
                     <img src="assets/images/promotion2.jpg" alt="promotion2">
                 </a>
+                
             </div>
             <div class="container2-form">
                 <form action="#">
-                    <a href="#" id="book">Book a Table</a>
-                    <a href="#" id="event">Event</a>
+                    <ul>
+                    <li class="options"><a href="#"  id="book"> Book a Table</a></li>
+                    <li class="options2"><a href="#" id="event"> Event</a></li>
+
+                </ul>
+        
 
                     <div class="form-field">
-                        <p id=section>Date</p>
+                        <p id=date>Date</p>
                         <input type="date" required>
                     </div>
                     
-                    <div class="form-field">
-                        <p id=section>Time</p>
-                        <input type="time" required>
+                    <div id="timeslot" class="form-field">
+                        <p id=time>Time</p>
+                        <input id= "clock" type="time" required>
                     </div>
 
-                        <p id=section>Number of People</p>
-                        <select name="select" id="#" required>
+                        <p id=people>Number of People</p>
+                        <select name="select" id="number" required>
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -200,20 +205,18 @@
                       </form>
 
                     <div class="form-field">
-                        <p id=section>Name</p>
-                        <input type="text" name="firstName" id="firstName" placeholder="Enter your full name"
+                        <p id=name>Name</p>
+                        <input type="text" name="firstName" id="fullname" placeholder="Enter your full name"
                             required autocomplete="on" />
                     </div>
                     <div class="form-field">
-                        <p id=section>Email Adress</p>
-                        <input type="email" name="email" id="email" placeholder="Enter your email address" required
+                        <p id=email>Email Adress</p>
+                        <input type="email" name="email" id="email-adresse" placeholder="Enter your email address" required
                             autocomplete="on" />
                     </div>
-            
-         
 
                     <div class="form-field">
-                        <p id=section>Notes</p>
+                        <p id=notes>Notes</p>
                         <textarea id="message" name="visitor_message"
                             placeholder="Tell us something else that might be important..."></textarea>
                     </div>
@@ -264,6 +267,7 @@
                             <li><a href="#">Book a dinner</a></li>
                         </ul>
                     </div>
+                    
                     <div class="footer-col">
                         <h4>Follow us</h4>
                         <div class="social-links">

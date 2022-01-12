@@ -9,36 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Gjøl Kro Restaurant</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
     </style>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img id="top-logo" style="width: 200px;" src="assets/images/Gjol-Kro_logo_black.svg"
-                alt="Gjøl Kro logo black"></a>
         <nav>
+            <a href="index.html"><img class="logo" src="assets/images/Gjol-Kro_logo_black.svg" alt=""></a>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="marci.index.html">Gallery</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="hours-location.html">Location & Hours</a></li>
+                <li><a href="#">Our</a></li>
+                <li><a id="reservation-nav" href="reservation.html">Reservation</a></li>
             </ul>
         </nav>
-        <img id="landing-image" style="width: 40%;" src="assets/images/landing.png"
-            alt="Gjøl Kro Restaurant landing image boat">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>We at Gjol Kro are <br>all about the experience</h1>
+                <p>We want you to enjoy the picturesque sunset over the
+                    fjord
+                    accompanied by the wide selection of traditional Danish dishes. We serve the classics with a modern
+                    twist.</p>
+                <form method="get" action="reservation.html">
+                    <button id="hero-button" type="submit">Book a table<table></table></button>
+                </form>
+            </div>
+            <div class="hero-image"><img id="landing-image" style="width: 100%;" src="assets/images/landing.png"
+                alt="Gjøl Kro Restaurant landing image boat"></div>
+        </div>
     </header>
     <main>
-        <section class="welcome">
-            <h1>Welcome</h1>
-            <p>We at Gjøl Kro are all about the experience. We want you to enjoy the picturesque sunset over the fjord
-                accompanied by the wide selection of traditional Danish dishes. We serve the classics with a modern
-                twist, prepared from fresh, locally sourced ingredients. Come and feel the salty breeze of the sea while
-                you enjoy a mouth-watering meal in the historic scenery.</p>
-            <p>It's not just food, it's an experience.</p>
-            <button>Hours & Locations</button>
-        </section>
         <div class="grid-container">
             <div class="grid-section" id="content1"><img src="assets/images/restuarant.jpg"
                     style="height: 100%; width: 100%; object-fit: cover;" alt=""></div>
@@ -80,7 +81,9 @@
                 <div class="mushroom"></div>
                 <h2>Reservations</h2>
                 <p>Book your table to skip the waiting line!</p>
-                <button id="book-us">Book us</button>
+                <form method="get" action="reservation.html">
+                    <button type="submit" id="book-us">Book us</button>
+                </form>
             </div>
             <div class="card"><img id="wine" src="assets/images/wine.ico" alt=""></div>
             <div class="card">
@@ -88,7 +91,9 @@
                 <h2>Events</h2>
                 <p>With spacious space, we can house 150 seated <br> guests, rent our place for parties, weddings,<br>
                     milestone birthdays, confirmations and much more. </p>
-                <button>Contact us</button>
+                <form method="get" action="reservation.html">
+                    <button type="submit" id="contact-us">Contact us</button>
+                </form>
             </div>
 
         </section>

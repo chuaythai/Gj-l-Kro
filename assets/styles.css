@@ -6,27 +6,27 @@
      background-color: #3A4A48;
      background-color: #2F2220;
      background-color: #F7F4E2;
-     font-family: 'Roboto', sans-serif;
 }
 body, html {
      height: 100%;
-     margin: 0;
-     margin:0;
+     width: 100vw;
+     margin: 5px;
      padding:0;
      box-sizing: border-box;
+     font-family: 'Roboto slab', serif;
 }
 
 /* Nav*/
-#top-logo {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     padding-top: 25px;
+.logo{
+    display: block;
+    width: 250px;
+    margin-top: 70px;
 }
 
-nav {
-     display: flex;
-     justify-content: center;
+nav>ul{
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 98px;
 }
 
 nav li {
@@ -37,13 +37,14 @@ margin-right: 3vw;
 text-transform: capitalize;
 }
 
-nav li>a {
-     text-decoration: none;
-}
-
 nav>ul>li>a {
      text-transform: uppercase;
+     text-decoration: none;
      color:rgb(0, 0, 0);
+}
+
+#reservation-nav{
+    font-weight: 500;
 }
 
 nav>ul>li>a:hover {
@@ -52,51 +53,58 @@ nav>ul>li>a:hover {
      transition: all 0.3s ease;     
 }
 
-#landing-image {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
+.hero-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hero-text hero-image";
+}
+
+.hero-text{
+    grid-area: hero-text;
+    padding-left: 80px;
+    padding-top: 100px;
+    width: 70%;
+}
+
+.hero-text p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.hero-text h1{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.hero-image{
+    grid-area: hero-image;
+}
+
+#hero-button{
+    margin-left:0;
 }
 
 /* main section*/
-
-.welcome {
-     font-size: 22px;
-     text-align: center;
-     margin: 0 auto;
-     margin-bottom: 100px;
-     padding: 10px;
-     width: 80vw;
-     border-style: double;
-     border-color: rgb(129, 110, 0);
-     border-width: 5px;
-     
-}
-
-
-.welcome>h1 {
-     padding-top: 10px;
-     }
-
-
-h1 {
-     font-weight: 200;
-}
-
 button {
-     background-color: #C8AE67;
-     border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+     background-color: #F7F4E2;
+     border-style: groove;
+     border-radius: 50px;
      height: 45px;
-     width: 180px;
+     width: 200px;
      text-transform: uppercase;
      border-color:#C8AE67;
+     margin: 0 auto;
+
 }
 
 button:hover{
-     background-color: #645835;
-     border-width: 5px;
+     background-color: #cfcaae;
+     border-width: 2px;
      transition: all 0.3s ease;
-     color:white;
+     color:black;
+     cursor: pointer;
 }
 
 /*reservation page*/
@@ -124,24 +132,46 @@ button:hover{
      grid-template-columns: 40% 60%;
     
 }
- 
+.options, nav li {
+     display: inline;
+    
+}
+
+.options2, nav li {
+     display: inline;
+   
+}
+.options,.options2,   nav li>a {
+               text-decoration: none;
+          }
+          
+          
+ .options2,.options,  nav>ul>li>a:hover {
+     text-decoration: underline;
+     color: #C8AE67;
+     transition: all 0.3s ease;     
+}
+          
+
 #book  {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
-     padding-left: 240px;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;   
-     
+     display: inline-block;
+     margin-left: 5.5vw;
+     padding-left: 5vw;
  }
 
  #event {
      font-family: 'Roboto Slab', serif;
      font-size: 25px;
-     padding-left: 240px;
+     margin-left: 4.5vw;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
+     display: inline-block;
  }
 
  #book:hover{
@@ -156,25 +186,77 @@ button:hover{
      text-decoration: underline;
  }
 
- #section {
+ #name, #date, #people, #time, #email, #notes   {
      font-family: 'Roboto Slab', serif;
      font-size: 20px;
-     padding-left: 240px;
      color:#F7F4E2 ;
      font-weight: 5;
      text-decoration: none;
+     display: inline;
+ 
  }
 
+ #time { 
+     margin-top: -5.3vw;
+     margin-left: 14.5vw;  
+}
+
+#clock { 
+     margin-top: -0.5vw;
+     margin-left: 14vw; 
+     }
+
+
+#date { 
+     margin-left: 4vw;     
+}
+
+#people { 
+     margin-top: -5.3vw;
+     margin-left: 30.5vw;  
+}
+#number { 
+margin-top: -2vw;
+margin-left: 30vw;  
+   
+}
+#name { 
+     margin-left: 3.5vw; 
+     margin-top: 1.5vw;
+           
+ }
+
+#fullname { 
+     margin-top: -1.79vw; 
+     }
+
+
+ #email { 
+     margin-left: 4.2vw;  
+     margin-top: -1.5vw;    
+}
+
+#email-adresse{ 
+     margin-left: 3.5vw;  
+     margin-top: -1.79vw; 
+}
+
+
+
+ .form-field > #time,#name, #date, #people, #email, #notes{
+      display: flex;
+      
+      
+}
 
  .container2-form {
      padding: 50px 40px 0px 10px;
      margin:  20px ;
-     color: #F7F4E2;
+     color: #F7F4E2; 
  }
  
  form {
      display: grid;
-     grid-row-gap: 25px;
  }
  
  .form-field p {
@@ -184,19 +266,33 @@ button:hover{
  
  .form-field {
      font-family: 'Roboto', sans-serif;
-     display: flex;
+     display: inline-block;
      padding-left: 100px;
-     justify-content: space-between;
+     background-color: #3A4A48;
+
  }
                      
  .form-field input,select {
-     padding: 10px 15px;
+     font-family: 'Roboto', sans-serif;
+     color: #F7F4E2;
+     background-color: #3A4A48;
  }
- 
+
+
  .container2 textarea {
-     padding: 10px 15px;
+     padding: 1vw 24vw 15vw 1vw;
+     font-family: 'Roboto', sans-serif;
+     font-size: 1vw;
+     background-color: #3A4A48;
  }
+
+ #notes { 
+     margin-left: 15vw;
+           
+     }
  .container2 .button {
+      margin-top: 3vw;
+      margin-left: 20vw;
      font-size: 25px;
      font-family: 'Roboto Slab', serif;
      color: #3A4A48;
@@ -212,7 +308,7 @@ button:hover{
                      
                                 
 
-/* Grid*/
+/* Home page Grid*/
 
 .grid-container {
      display: grid;
@@ -239,24 +335,18 @@ button:hover{
 #content1 {
      grid-area: content1;
 }
-
 #content2 {
      grid-area: content2;
-
 }
-
 #content3 {
      grid-area: content3;
 }
-
 #content4 {
      grid-area: content4;
 }
-
 #content5 {
      grid-area: content5;
 }
-
 #content6 {
      grid-area: content6;
 }
@@ -323,20 +413,33 @@ button:hover{
 }
 
 #wine{
-     padding-top: 40%;
+     padding-top: 20%;
 }
 #mushroom{
-     padding-top: 30%;
+     padding-top: 20%;
      padding-left: 10%;
 }
 
 .reservations-events button{
      margin-top: 30px;
-     background-color: #2F2220;
-     color: white;
+     background-color: #C8AE67;
+     color: black;
+    border-color: #F7F4E2;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.reservations-events button:hover{
+    background-color: #ad9759;
+    font-size: 1.1rem;
+    border-width: 3px;
+
 }
 #book-us{
-     margin-top:65px;
+     margin-top: 65px;
+}
+#contact-us{
+    margin-right: 300px;
 }
 
 h2{
@@ -436,7 +539,9 @@ h2{
          width: 100%;
      }
  }
+
  /*gallery*/
+
  *, {
 
      box-sizing: border-box;
@@ -483,15 +588,14 @@ nav>ul>li>a:hover {
  
 
  
- 
-   
  .p1 {
      font-family: roboto slab;
      font-weight: bold;
      font-size: 30px;
      margin-top: 55px;
-     margin-left: 565px;
+     margin-left: 640px;
      margin-bottom: 0;
+     
      
  }
 
@@ -568,4 +672,3 @@ nav>ul>li>a:hover {
 
 
  
-
