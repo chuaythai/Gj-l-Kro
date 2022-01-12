@@ -502,6 +502,9 @@ nav>ul>li>a:hover {
      font-size: 22px;
      margin-left: 115px;
  }
+
+
+ 
  
  .main {
      justify-content: center;
@@ -521,157 +524,48 @@ nav>ul>li>a:hover {
      object-fit: cover;
      object-position: center;
  }
+
+.banner {
+ position: relative;
+ width: 90%;
+}
+
+.heading1 {
+    position: absolute;
+    top: 35%;
+    left: 30% ;
+    width: 100%;
+    color: #F7F4E2;
+
+}
+
+.paragraph1 {
+    position: absolute;
+    top: 44%;
+    left: 30% ;
+    width: 100%;
+    color: #F7F4E2;
+}
  
- .main2 {
-     justify-content: center;
-     align-items: center;
-     margin-top: 10px;
-     width: 100vw;
-     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(520px, 1050px));
-     column-gap: 10px;
-     row-gap: 10px;
-     margin-bottom: 60px;
- }
+.heading2 {
+    position: absolute;
+    top: 35%;
+    left: 30% ;
+    width: 100%;
+    color: #000000;
+
+}
+
+.paragraph2 {
+    position: absolute;
+    top: 44%;
+    left: 30% ;
+    width: 100%;
+    color: #000000;
+}
+
+
+
+
  
- .salmon {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .salmon:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .mussel {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .mussel:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .tartar {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .tartar:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .fish {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .fish:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .caviar {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .caviar:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .chicken {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .chicken:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .cod {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .cod:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .pork {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .pork:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .image1 {
-     width: 1050px;
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .image1:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .image2 {
-     width: 1050px;
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .image2:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .panacotta {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .panacotta:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .choco {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .choco:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .coffee {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .coffee:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
- 
- .chocolate {
-     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-     transition: 1s;
- }
- 
- .chocolate:hover {
-     transform: scale(1.04);
-     z-index: 2;
- }
+
