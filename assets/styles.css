@@ -10,7 +10,6 @@
 body, html {
      height: 100%;
      width: 100vw;
-     margin: 5px;
      padding:0;
      box-sizing: border-box;
      font-family: 'Roboto slab', serif;
@@ -84,7 +83,7 @@ nav>ul>li>a:hover {
     margin-left:0;
 }
 
-/* main section*/
+/* Button*/
 button {
     font-size: 1rem;
     font-weight: 300;
@@ -106,6 +105,94 @@ button:hover{
      color:black;
      cursor: pointer;
 }
+
+/* Main section */
+
+/* Promotion*/
+
+.promotion{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    grid-template-areas: "promo-image promo-form";
+    height: 85vh;
+    width: 100vw;
+    background-color: #3A4A48;
+    color: #F7F4E2;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #F7F4E2;
+    text-transform: uppercase;
+}
+
+.promo-image{
+grid-area: promo-image;
+}
+
+.promo-form{
+    grid-area: promo-form;
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.promotion input{
+    position: relative;
+    top: 60px;
+    left: -70px;
+    width: 60%;
+    height: 50px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #3A4A48;
+    border: 1px solid #C8AE67;
+    border-radius: 50px;
+}
+
+input[type="submit"] {
+    background-color: #C8AE67;
+    width: 180px; 
+    height: 50px;
+    border: 1px solid #C8AE67;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-top: -51px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #cfcaae;
+    border-width: 2px;
+    transition: all 0.3s ease;
+    color:black;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    margin-left: -120px;
+    margin-top: 0px;
+    -ms-transform: scale(0.5); /* IE */
+    -moz-transform: scale(0.5); /* FF */
+    -webkit-transform: scale(0.5); /* Safari and Chrome */
+    -o-transform: scale(0.5); /* Opera */
+    transform: scale(0.5);
+    padding: 10px;
+   
+}
+
+label[for="terms"]{
+    position: relative;
+    top:100px;
+    width: 600px;
+    font-size: 0.8rem;
+    margin-left: 80px;
+}
+
 
 /*reservation page*/
 
@@ -245,8 +332,6 @@ margin-left: 30vw;
 
  .form-field > #time,#name, #date, #people, #email, #notes{
       display: flex;
-      
-      
 }
 
  .container2-form {
@@ -314,9 +399,9 @@ margin-left: 30vw;
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-areas: 
-     "content1 content2"
-     "content3 content4"
-     "content5 content6";
+     "content2 content1"
+     "content4 content3"
+     "content6 content5";
      grid-gap: 0;
      text-align: center;
      color: #000;
@@ -352,7 +437,7 @@ margin-left: 30vw;
 }
 
 
-/* history*/
+/* history 
 
 .history {
      width: 99vw;
@@ -383,50 +468,43 @@ margin-left: 30vw;
      float:right;
 }
 
-/* Promotion*/
-
-.promotion{
-     height: 95vh;
-     width: 100vw;
-     background-color: #3A4A48;
-     margin:0;  
-}
-.promotion>.potato{
-     margin-top: 30px;
-     margin-left: 30px;
-}
-
 /*Reservations*/
 
 .reservations-events {
      display: grid;
-     grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+     grid-template-columns: 1fr 1fr;
      grid-template-rows: auto;
-     grid-template-areas: "card card card card";
+     grid-template-areas: "card card";
      width: 100vw;
-     height: 70vh;
-     background-color: #C8AE67;
+     height: 80vh;
+     background-color: #3A4A48;
+     color: #F7F4E2;
 }
-.card{
+.card {
      margin: 0 auto;
-     padding-top: 20%;
+     padding-top: 15%;
 }
 
-#wine{
-     padding-top: 20%;
+.card p{
+    width: 70%;
+    font-size: 1.3rem;
+    font-weight: 300;
 }
-#mushroom{
-     padding-top: 20%;
-     padding-left: 10%;
+
+.card h3{
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .reservations-events button{
-     margin-top: 30px;
-     background-color: #C8AE67;
-     color: black;
+     margin-top: 20px;
+     margin-left: 0px;
+     background-color: #3A4A48;
+     color: #F7F4E2;
     border-color: #F7F4E2;
     border-style: solid;
     border-width: 2px;
+
 }
 
 .reservations-events button:hover{
@@ -435,18 +513,12 @@ margin-left: 30vw;
     border-width: 3px;
 
 }
-#book-us{
-     margin-top: 65px;
-}
-#contact-us{
-    margin-right: 300px;
+
+.reservations-events img{
+    padding-left:50%;
+    padding-top: 20px;
 }
 
-h2{
-     font-size: 2.5rem;
-     color: #2F2220;
-     text-transform: uppercase;
-}
 
 /* Footer */
 
