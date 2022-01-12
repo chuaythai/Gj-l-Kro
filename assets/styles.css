@@ -9,24 +9,24 @@
 }
 body, html {
      height: 100%;
-     margin: 0;
-     margin:0;
+     width: 100vw;
+     margin: 5px;
      padding:0;
      box-sizing: border-box;
      font-family: 'Roboto slab', serif;
 }
 
 /* Nav*/
-#top-logo {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     padding-top: 25px;
+.logo{
+    display: block;
+    width: 250px;
+    margin-top: 70px;
 }
 
-nav {
-     display: flex;
-     justify-content: center;
+nav>ul{
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 98px;
 }
 
 nav li {
@@ -37,13 +37,14 @@ margin-right: 3vw;
 text-transform: capitalize;
 }
 
-nav li>a {
-     text-decoration: none;
-}
-
 nav>ul>li>a {
      text-transform: uppercase;
+     text-decoration: none;
      color:rgb(0, 0, 0);
+}
+
+#reservation-nav{
+    font-weight: 500;
 }
 
 nav>ul>li>a:hover {
@@ -52,41 +53,38 @@ nav>ul>li>a:hover {
      transition: all 0.3s ease;     
 }
 
-#landing-image {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
+.hero-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hero-text hero-image";
+}
+
+.hero-text{
+    grid-area: hero-text;
+    padding-left: 80px;
+    padding-top: 100px;
+    width: 70%;
+}
+
+.hero-text p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+.hero-text h1{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.hero-image{
+    grid-area: hero-image;
+}
+
+#hero-button{
+    margin-left:0;
 }
 
 /* main section*/
-
-.welcome {
-     font-size: 20px;
-     font-weight: 300;
-     text-align: center;
-     margin: 0 auto;
-     margin-bottom: 100px;
-     padding-right: 50px;
-     padding-left: 50px;
-     width: 80vw;
-     padding-bottom: 50px;
-     border-style: double;
-     border-color: rgb(129, 110, 0);
-     border-width: 5px;
-     
-}
-
-
-.welcome>h1 {
-     padding-top: 10px;
-     font-weight: 400;
-     }
-
-
-h1 {
-     font-weight: 200;
-}
-
 button {
     font-size: 1rem;
     font-weight: 300;
