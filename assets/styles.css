@@ -671,4 +671,34 @@ nav>ul>li>a:hover {
 
 
 
- 
+ .heading3 {
+    position: absolute;
+    top: 35%;
+    left: 22% ;
+    width: 100%;
+    color: #000000;
+ }
+
+ .paragraph3 {
+    position: absolute;
+    top: 44%;
+    left: 23% ;
+    width: 100%;
+    color: #000000;
+ }
+
+ .heading4 {
+    position: absolute;
+    top: 35%;
+    left: 22% ;
+    width: 100%;
+    color: #ffffff;
+ }
+
+ .paragraph4 {
+    position: absolute;
+    top: 44%;
+    left: 23% ;
+    width: 100%;
+    color: #ffffff;
+ }
