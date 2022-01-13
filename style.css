@@ -1,5 +1,4 @@
 *, {
-
     box-sizing: border-box;
 }
 
@@ -251,4 +250,10 @@ nav a {
 .chocolate:hover {
     transform: scale(1.04);
     z-index: 2;
+}
+
+/* ----- Menu page CSS  ----- */ 
+
+.menu-nav {
+    display: flex;
 }
