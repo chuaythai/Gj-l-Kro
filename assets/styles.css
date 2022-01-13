@@ -26,6 +26,7 @@ nav>ul{
     display: inline-block;
     margin-left: 40%;
     margin-top: 98px;
+   
 }
 
 nav li {
@@ -275,12 +276,15 @@ label[for="terms"]{
      font-family: 'Roboto Slab', serif;
      font-size: 40px;
      text-align:right;
-     margin-right: 18vw;
+     margin-right: 18.5vw;
      color:#000000 ;
      font-weight: 700;
      text-decoration: none;   
  }
- 
+#gk{
+    float: left;
+    margin-top: 7vw;
+}
 .container2 {
      background-color: #3A4A48;
      margin-right: 5vw;
@@ -364,7 +368,6 @@ label[for="terms"]{
 
 }
 
-
 #date { 
      margin-left: -1.8vw;     
 }
@@ -412,7 +415,7 @@ margin-right: -1vw;
      }
 
 
- #email { 
+#email { 
     margin-left: 8.2vw; 
     margin-top: 3vw;    
 }
@@ -475,15 +478,16 @@ margin-right: -1vw;
      }
  .container2 .button {
     margin-top: 3vw;
-    margin-left: 15vw;
+    margin-left: 13.5vw;
     font-size: 25px;
     font-family: 'Roboto Slab', serif;
     color: #3A4A48;
+    font-weight: normal;
     background-color:#F7F4E2;
     cursor: pointer;
     transition-duration: 0.4s;
     
- }
+ } 
 .button:hover {
      color: #F7F4E2;
      background:#3A4A48;
