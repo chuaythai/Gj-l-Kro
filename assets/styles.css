@@ -274,24 +274,21 @@ label[for="terms"]{
 #reservation  {
      font-family: 'Roboto Slab', serif;
      font-size: 40px;
-     text-align: center;
+     text-align:right;
+     margin-right: 18vw;
      color:#000000 ;
      font-weight: 700;
      text-decoration: none;   
  }
-.container2 img {
-     width: 450px;
-   }
  
 .container2 {
      background-color: #3A4A48;
-     margin-top: 5px;
-     margin-right: 100px;
-     margin-bottom: 100px;
-     margin-left: 100px;
+     margin-right: 5vw;
+     margin-bottom: 5vw;
+     margin-left: 50vw;
      box-shadow: 10px 15px 20px rgba(0, 0, 0, .5);
      display: grid;
-     grid-template-columns: 40% 60%;
+     grid-template-columns: 100% 100%;
     
 }
 .options, nav li {
@@ -315,22 +312,22 @@ label[for="terms"]{
           
 
 #book  {
-     font-family: 'Roboto Slab', serif;
-     font-size: 25px;
+     font-family: 'Roboto', serif;
+     font-size: 30px;
      color:#F7F4E2 ;
-     font-weight: 5;
+     font-weight: lighter;
      text-decoration: none;   
      display: inline-block;
-     margin-left: 5.5vw;
+     margin-left: -0.5vw;
      padding-left: 5vw;
  }
 
  #event {
-     font-family: 'Roboto Slab', serif;
-     font-size: 25px;
-     margin-left: 4.5vw;
+    font-family: 'Roboto', serif;
+     font-size: 30px;
+     margin-left: 5vw;
      color:#F7F4E2 ;
-     font-weight: 5;
+     font-weight: lighter;
      text-decoration: none;
      display: inline-block;
  }
@@ -344,62 +341,86 @@ label[for="terms"]{
  #event:hover{
      color: #C8AE67;
      transition-duration: 0.3s;
-     text-decoration: underline;
+     text-decoration: underline ;
  }
 
- #name, #date, #people, #time, #email, #notes   {
+ #name, #date, #people, #time, #email, #notes  {
      font-family: 'Roboto Slab', serif;
-     font-size: 20px;
+     font-size: 25px;
      color:#F7F4E2 ;
-     font-weight: 5;
+     font-weight: lighter;
      text-decoration: none;
      display: inline;
  
  }
 
- #time { 
-     margin-top: -5.3vw;
-     margin-left: 14.5vw;  
-}
+ #fullname, #calendar,#number, #clock, #email-adresse, #message {
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    color:#F7F4E2 ;
+    font-weight: lighter;
+    text-decoration: none;
+    display: inline;
 
-#clock { 
-     margin-top: -0.5vw;
-     margin-left: 14vw; 
-     }
+}
 
 
 #date { 
-     margin-left: 4vw;     
+     margin-left: -1.8vw;     
 }
 
+#calendar { 
+    margin-left: -6vw;     
+}
+
+#time { 
+    margin-top: -5.9vw;
+    margin-left: 11vw;  
+
+}
+
+#clock { 
+    margin-top: -0.2vw;
+    margin-left: 9vw; 
+    padding-right: 2vw;
+    padding-left: 1vw;
+    align-content: center;
+}
+
+
 #people { 
-     margin-top: -5.3vw;
-     margin-left: 30.5vw;  
+     margin-top: -5.9vw;
+     margin-left: 31vw;  
 }
 #number { 
 margin-top: -2vw;
-margin-left: 30vw;  
+margin-left: 27vw; 
+margin-right: -1vw; 
    
 }
 #name { 
-     margin-left: 3.5vw; 
-     margin-top: 1.5vw;
+     margin-left: 11vw; 
+     margin-top: 3vw;
+    
            
  }
 
 #fullname { 
-     margin-top: -1.79vw; 
+     margin-top: -3vw; 
+     margin-left: -6vw; 
+     padding: 0vw 24vw 0vw 0.1vw;
      }
 
 
  #email { 
-     margin-left: 4.2vw;  
-     margin-top: -1.5vw;    
+    margin-left: 8.2vw; 
+    margin-top: 3vw;    
 }
 
 #email-adresse{ 
-     margin-left: 3.5vw;  
-     margin-top: -1.79vw; 
+    margin-top: -3vw; 
+    margin-left: -6vw; 
+     padding: 0vw 24vw 0vw 0.1vw;
 }
 
 
@@ -439,25 +460,28 @@ margin-left: 30vw;
 
 
  .container2 textarea {
-     padding: 1vw 24vw 15vw 1vw;
-     font-family: 'Roboto', sans-serif;
-     font-size: 1vw;
-     background-color: #3A4A48;
+    margin-top: -10vw; 
+    margin-left: -6vw; 
+    padding: 0vw 24vw 0vw 0.1vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    background-color: #3A4A48;
  }
 
  #notes { 
-     margin-left: 15vw;
+     margin-left: 11vw; 
+     margin-bottom: 3.5vw; 
            
      }
  .container2 .button {
-      margin-top: 3vw;
-      margin-left: 20vw;
-     font-size: 25px;
-     font-family: 'Roboto Slab', serif;
-     color: #3A4A48;
-     background-color:#F7F4E2;
-     cursor: pointer;
-     transition-duration: 0.4s;
+    margin-top: 3vw;
+    margin-left: 15vw;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: #3A4A48;
+    background-color:#F7F4E2;
+    cursor: pointer;
+    transition-duration: 0.4s;
     
  }
 .button:hover {

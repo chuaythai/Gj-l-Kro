@@ -18,37 +18,30 @@
 <body>
     
     <header>
-        <a href="index.html"><img id="top-logo" style="width: 200px;" src="assets/images/Gjol-Kro_logo_black.svg"
-                alt="Gjøl Kro logo black"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="marci.index.html">Gallery</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="hours-location.html">Location & Hours</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <a href="index.html"><img class="logo" src="assets/images/Gjol-Kro_logo_black.svg" alt=""></a>
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="marci.index.html">Gallery</a></li>
+                    <li><a href="#">Our story</a></li>
+                    <li><a id="reservation-nav" href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
         <h2 id=reservation>RESERVATION</h2>
         <div class="container2">
-            <div class="containerpromo">
-                <a href="#">
-                    <img src="assets/images/promotion2.jpg" alt="promotion2">
-                </a>
-                
-            </div>
             <div class="container2-form">
                 <form action="#">
                     <ul>
-                    <li class="options"><a href="#"  id="book"> Book a Table</a></li>
-                    <li class="options2"><a href="#" id="event"> Event</a></li>
+                    <li class="options"><a href="#"  id="book"> BOOK A TABLE</a></li>
+                    <li class="options2"><a href="#" id="event">EVENT</a></li>
 
                 </ul>
         
 
                     <div class="form-field">
                         <p id=date>Date</p>
-                        <input type="date" required>
+                        <input id="calendar" type="date" required>
                     </div>
                     
                     <div id="timeslot" class="form-field">
@@ -56,7 +49,7 @@
                         <input id= "clock" type="time" required>
                     </div>
 
-                        <p id=people>Number of People</p>
+                        <p id=people>Guest</p>
                         <select name="select" id="number" required>
                           <option>1</option>
                           <option>2</option>
