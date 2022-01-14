@@ -53,6 +53,8 @@ nav>ul>li>a:hover {
      transition: all 0.3s ease;     
 }
 
+/* nav ends here, hero starts here*/
+
 .hero-container{
     display: grid;
     height: 100vh;
@@ -78,15 +80,13 @@ nav>ul>li>a:hover {
 }
 .hero-image{
     grid-area: hero-image;
-    padding-right: 50px;
+    padding-right: 70px;
     padding-top:60px;
 }
 
 #hero-button{
     margin-left:0;
 }
-
-/* responsive nav*/
 
 @media (max-width: 767px){
     .hero-container{
@@ -149,14 +149,20 @@ button:hover{
     color: #F7F4E2;
 }
 
-h2{
+.promotion h2{
     font-size: 2.5rem;
     color: #F7F4E2;
     text-transform: uppercase;
 }
 
+.promotion h4{
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
 .promo-image{
 grid-area: promo-image;
+padding-left: 80px;
 }
 
 .promo-form{
@@ -483,7 +489,7 @@ margin-left: 30vw;
 
 .grid-section>p {
      margin-top: 150px;
-     margin-left: 25%;
+     margin-left: 80px;
      width: 50%;
      font-size: 33px;
      text-align: left;
@@ -493,6 +499,9 @@ margin-left: 30vw;
 
 #content1 {
      grid-area: content1;
+}
+#content3  p {
+    padding-left: 80px;
 }
 #content2 {
      grid-area: content2;
