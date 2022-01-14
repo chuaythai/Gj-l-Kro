@@ -54,6 +54,12 @@ nav>ul>li>a:hover {
      transition: all 0.3s ease;     
 }
 
+@media (max-width: 1313px){
+    #reservation-nav{
+        margin-top: 40px;
+    }
+}
+
 /* nav ends here, hero starts here*/
 
 .hero-container{
@@ -177,7 +183,7 @@ padding-left: 80px;
     position: relative;
     top: 60px;
     left: -70px;
-    width: 60%;
+    width: 55%;
     height: 50px;
     padding: 12px 20px;
     margin-top: 20px;
@@ -193,7 +199,7 @@ input[type="submit"] {
     height: 50px;
     border: 1px solid #C8AE67;
     border-radius: 50px;
-    margin-left: 500px;
+    margin-left: 550px;
     margin-top: -51px;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -227,7 +233,7 @@ label[for="terms"]{
     margin-left: 80px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1266px) {
     .promotion{
         display:grid;
         grid-template-columns: 1fr;
@@ -241,10 +247,12 @@ label[for="terms"]{
             height: 50px;
             border: 1px solid #C8AE67;
             border-radius: 50px;
-            margin-left: 30px;
+            margin-left: 30%;
             margin-top: 20px;
             font-size: 1.3rem;
             text-transform: uppercase;
+        }
+        input[type="email"] {
         }
     }
 
@@ -274,6 +282,23 @@ label[for="terms"]{
     input[type="checkbox"] {
         font-size: 0.9rem;
     }
+}
+@media screen and (max-width: 390px){
+    .promotion h2{
+        font-size: 1.6rem;
+        width: 200px;
+    }
+    .promotion h4{
+        font-size: 1rem;
+        width: 250px;
+    }
+    .promotion input[type="email"]{
+        width: 260px;
+    }
+    input[type="checkbox"] {
+        font-size: 0.8rem;
+    }
+
 }
 
 /*reservation page*/
@@ -560,38 +585,7 @@ margin-right: -1vw;
    }
 }
 
-/* history 
-
-.history {
-     width: 99vw;
-     height: 100vh;
-     background-color: #C8AE67;
-}
-
-.history-text1{
-     width: 50vw;
-     height: 40vh;
-     margin-left: 50px;
-     padding-top: 100px;
-     font-size: 33px;
-}
-
-.history-text2{
-     width: 50vw;
-     height: 40vh;
-     margin-left: 50px;
-     margin-top: 60px;
-     font-size: 22px;
-}
-
-.history-image{
-     background-image: url(images/img1.png);
-     width: 40vw;
-     height: 100vh;
-     float:right;
-}
-
-/*Reservations*/
+/* Reserve an event section home page */
 
 .reservations-events {
      display: grid;
@@ -681,6 +675,16 @@ margin-right: -1vw;
     background-color: #2F2220;
     border: solid #F7F4E2 2px;
     color:#F7F4E2;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.footer-button-reserve{
+    background-color: #2F2220;
+    border: solid #F7F4E2 2px;
+    color:#F7F4E2;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
 .footer-button:hover{
@@ -783,14 +787,11 @@ margin-right: -1vw;
  }
 
  /*gallery*/
-
- *, {
-
-     box-sizing: border-box;
- }
  
  body, html {
      scroll-behavior: smooth;
+     box-sizing: border-box;
+
  }
  
  #top-logo {
