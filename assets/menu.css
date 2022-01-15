@@ -1,0 +1,66 @@
+/* CSS for Gjol Kro Restaurant Menu subpage*/
+
+:root {
+    background-color: #0B1938;
+    background-color: #C8AE67;
+    background-color: #3A4A48;
+    background-color: #2F2220;
+    background-color: #F7F4E2;
+}
+body, html {
+    height: 100%;
+    width: 100vw;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto slab', serif;
+}
+
+/* Nav*/
+.logo{
+   display: block;
+   width: 250px;
+   margin-top: 70px;
+   margin-left: 70px;
+}
+
+nav {
+    height: 50px;
+}
+
+nav>ul{
+   display: inline-block;
+   margin-left: 35%;
+   margin-top: 98px;
+  
+}
+
+nav li {
+display: inline;
+float: left;
+list-style-type: none;
+margin-right: 3vw;
+text-transform: capitalize;
+}
+
+nav>ul>li>a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+#reservation-nav{
+   font-weight: 500;
+   background-color: #C8AE67;
+   padding: 8px;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;     
+}
+
+/* MENU section starts here */
+
+h1 {
+    padding-top: 100px;
+}
