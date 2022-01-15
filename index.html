@@ -16,13 +16,16 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img class="logo" src="assets/images/Gjol-Kro_logo_black.svg" alt=""></a>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a id="reservation-nav" href="reservation.html">Reservation</a></li>
-            </ul>
+            <div class="header-container">
+                <a href="index.html"><img class="logo" src="assets/images/Gjol-Kro_logo_black.svg"
+                        alt="Gjol kro restaurant logo"></a>
+                <ul class="menu">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Our story</a></li>
+                    <li><a id="reservation-cta" href="reservation.html">Reservation</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="hero-container">
             <div class="hero-text">
@@ -32,16 +35,17 @@
                     accompanied by the wide selection of traditional Danish dishes. We serve the classics with a modern
                     twist.</p>
                 <form method="get" action="reservation.html">
-                    <button id="hero-button" type="submit">Book a table<table></table></button>
+                    <button class="hero-button" type="submit">Book a table<table></table></button>
                 </form>
             </div>
-            <div class="hero-image"><img id="landing-image" style="width: 100%;" src="assets/images/landing.png"
-                    alt="Gjøl Kro Restaurant landing image boat"></div>
+            <div class="hero-image"><img id="landing-image" style="width: 100%; height: 100%"
+                    src="assets/images/landing.png" alt="Gjøl Kro Restaurant"></div>
         </div>
     </header>
     <main>
         <section class="promotion">
-            <img class="promo-image" style="max-width:40vw; height: 80vh;" src="assets/images/fish promo.jpg" alt="">
+            <img class="promo-image" style="max-width:40vw; height: 80vh;" src="assets/images/fish promo.jpg"
+                alt="Gjol Kro 20% off promotion">
             <div class="promo-form">
                 <h2>Dine with us for 20% OFF</h2>
                 <h4>Subscribe to our newsletter and recieve a 20% discount <br> in your mailbox!</h4>
@@ -58,7 +62,8 @@
         </section>
         <div class="grid-container">
             <div class="grid-section" id="content1"><img src="assets/images/restuarant.jpg"
-                    style="height: 100%; width: 100%; object-fit: cover;" alt=""></div>
+                    style="height: 100%; width: 100%; object-fit: cover;"
+                    alt="Gjol Kro restaurant with cozy atmosphere charming view and individual approach"></div>
             <div class="grid-section" id="content2">
                 <p>Restaurant where you can feel the cozy atmosphere while savour charming view and individual approach
                     from the owners and staff.</p>
@@ -67,19 +72,25 @@
                 <p>The menu will vary depending on what raw goods are available during the season.</p>
             </div>
             <div class="grid-section" id="content4"><img src="assets/images/salmon bread.jpg"
-                    style="height: 100%; width: 100%; object-fit: cover;" alt="">
+                    style="height: 100%; width: 100%; object-fit: cover;"
+                    alt="Salmon Smørrebrød fresh organic local ingredients ">
             </div>
             <div class="grid-section" id="content5"><img src="assets/images/pork belly.jpg"
-                    style="height: 100%; width: 100%; object-fit: cover;" alt=""></div>
+                    style="height: 100%; width: 100%; object-fit: cover;" alt="Flæskesteg Gjol Kro restaurant"></div>
             <div class="grid-section" id="content6">
                 <p>Guests can enjoy our à la carte menu in the restaurant, in the bar area and on the terrace.</p>
+                <form method="get" action="menu.html">
+                    <button type="submit" id="menu-button" class="hero-button">View menu</button>
+                </form>
             </div>
         </div>
         <section class="reservations-events">
-            <div><img id="events" src="assets/images/balloon.png" style="width:300px;" alt=""></div>
+            <div><img id="events" src="assets/images/balloon.png" style="width:300px;"
+                    alt="Gjol Kro events weddings party reservation"></div>
             <div class="card">
                 <h3>Events</h3>
-                <p>With spacious space, we can house 150 seated guests, rent our place for parties, weddings, milestone
+                <p>With commodious space, we can house 150 seated guests, rent our place for parties, weddings,
+                    milestone
                     birthdays, confirmations and much more.
                 </p>
                 <form method="get" action="reservation.html">
@@ -91,7 +102,7 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <img src="assets/images/Gjol-Kro_logo_white.svg" style="height: 80px;" alt="">
+            <img src="assets/images/Gjol-Kro_logo_white.svg" style="height: 80px;" alt="Gjol Kro Logo">
             <div class="footer-row">
                 <div class="footer-col">
                     <h4>Explore more</h4>
@@ -111,7 +122,7 @@
                         <li>Fhordgade 18, <br> 9440 Aabybro</li>
                         <li id="click-here">Click here to view on google maps:</li>
                     </ul>
-                    <form method="get" 
+                    <form method="get"
                         action="https://www.google.hu/maps/place/Gj%C3%B8l+Kro+-+Kroen+ved+fjorden/@57.0638002,9.6974996,17z/data=!3m1!4b1!4m5!3m4!1s0x46493a98644f49d3:0xee64761e113795b1!8m2!3d57.0638002!4d9.6996883">
                         <button type="submit" class="footer-button">View on map</button>
                     </form>
@@ -133,7 +144,7 @@
                 <div class="footer-col">
                     <h4>Follow us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i id="facebook-icon" class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram "></i></a>
                     </div>
                 </div>
