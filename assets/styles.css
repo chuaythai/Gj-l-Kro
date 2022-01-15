@@ -22,6 +22,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo menu";
+
 }
 
 .logo{
@@ -38,7 +39,6 @@ nav>ul{
     display: inline-block;
     margin-left: 200px;
     margin-top: 98px;
-   
 }
 
 nav ul li{
