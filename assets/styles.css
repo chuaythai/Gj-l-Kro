@@ -552,7 +552,7 @@ margin-right: -1vw;
 
 
  .container2 .button {
-    margin-top: 3vw;
+    margin-top: 8vw;
     margin-left: 13.5vw;
     font-size: 22px;
     font-family: 'Roboto Slab', serif;
@@ -567,7 +567,30 @@ margin-right: -1vw;
      color: #F7F4E2;
      background:#3A4A48;
  }
-                     
+
+ .form-field input[type="checkbox"] {
+    margin:0;
+    padding:0;
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+   }
+
+   #message{
+       margin-bottom: 20px;
+   }
+
+   #policy{
+       margin: 0;
+       padding: 0;
+   }
+
+   #terms2{
+       margin-top: 0px;
+   }
+                    
                                 
 
 /* Home page Grid*/
