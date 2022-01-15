@@ -53,7 +53,7 @@ margin-right: 1vw;
 text-transform: capitalize;
 }
 
-nav>div>ul>li>a {
+nav > div > ul > li > a {
      text-transform: uppercase;
      text-decoration: none;
      color:rgb(0, 0, 0);
@@ -65,7 +65,7 @@ nav>div>ul>li>a {
     padding: 2px;
 }
 
-nav>ul>li>a:hover {
+nav > div > ul > li > a:hover {
      text-decoration: underline;
      transition: all 0.3s ease;     
 }
@@ -112,6 +112,9 @@ main > ul > li > a {
     text-decoration: none;
 }
 
+main > ul > li > a:hover {
+    text-decoration: underline;
+}
 
 /* Lunch section */
 
@@ -119,6 +122,7 @@ main > ul > li > a {
     background-color: #3A4A48;
     margin: 50px;
     color: #F7F4E2;
+    padding: 0 40px;
 }
 
 h2 {
@@ -214,3 +218,151 @@ div > ul > li {
         line-height: 3rem;
     }
 }
+
+/* CSS for footer*/
+
+.footer-container{
+    font-family: roboto;
+     width: 100vw;
+     height: fit-content;
+     background-color: #2F2220;
+     margin:auto;
+     color:#F7F4E2;
+     text-transform: uppercase;
+     font-size: 1.2rem;
+ }
+ .footer-row{
+     display:flex;
+     flex-wrap:wrap;
+ }
+
+ .footer-button{
+    background-color: #F7F4E2;
+    border: solid #ad9759 2px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-family: roboto slab;
+}
+
+.footer-button-reserve{
+    background-color: #F7F4E2;
+    border: solid #ad9759 2px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family: roboto slab;
+}
+
+.footer-button:hover{
+    background-color: #ad9759;
+    font-size: 1.1rem;
+    border-width: 3px;
+}
+
+.footer-container>img{
+    margin-left: 30px;
+}
+
+ .footer-col ul{
+     list-style-type:none;
+ }
+ .footer-col a{
+      text-decoration: none;
+ }
+ .footer-col a h4:hover{
+      padding-left: 8px;
+      transition: all 0.3s ease;
+}
+ .footer{
+     background-color:#2F2220;
+     padding: 30px 0;
+ }
+ .footer-col{
+     width: 22%;
+     padding: 0px 15px;
+     
+ }
+ .footer-col h4{
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 18px;
+     margin-left: 38px;
+     color: white;
+     margin-bottom:30px;
+     position: relative;
+ }
+ 
+ .footer-col ul li:not(:last-child){
+     margin-bottom: 10px;
+ }
+ .footer-col ul li a{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+     color: white;
+     text-decoration: none;
+     display: block;
+     transition: all 0.3s ease;
+     padding-top: 15px;
+ }
+ .footer ul li a:hover {
+      color:white;
+      padding-left: 8px;
+ }
+ .footer-col .social-links a{
+     display: inline-block;
+     height: 50px;
+     width: 50px;
+     background-color: #F7F4E2;
+     margin-top: 10px;
+     text-align: center ;
+     line-height: 50px;
+     border-radius: 50%;
+     color: black;
+     transition: all 0.5s ease;
+     margin-left: 40px;
+ }
+
+
+ .footer-col .social-links a:hover{
+     color: black;
+     background-color: #C8AE67;
+ }
+
+#click-here{
+    padding-top: 20px;
+}
+
+.copyright{
+    font-size: 0.7rem;
+    width: 100vw;
+    height: 30px;
+    border-top: solid 1px white;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-top: 60px;
+
+}
+
+ /*responsive*/
+ @media(max-width: 767px){
+     .footer-col {
+         width: 50%;
+         margin-bottom:30px;
+     }
+ }
+ @media(max-width: 574px){
+     .footer-col {
+         width: 100%;
+     }
+ }
+
+ /*Privacy policy*/
+
+ .privacy-section {
+     margin: 0 60px;
+ }
+
+ h4 {
+    font-size: 30px;
+ }
