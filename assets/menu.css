@@ -100,13 +100,18 @@ h1 {
     display: flex;
     text-transform: uppercase;    
     list-style-type: none;
-    margin-left: 32%;
-    margin-right: auto;
+    justify-content: center;
 }
 
 main > ul > li + li {
     padding-left: 30px;
 }
+
+main > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
 
 /* Lunch section */
 
@@ -134,7 +139,7 @@ h3 {
     color: #F7F4E2;
     text-align: center;
     text-transform: uppercase;
-    border-bottom: 2px solid #F7F4E2;
+    border-bottom: 2px solid #C8AE67;
     padding-bottom: 1em;
 }
 
@@ -183,4 +188,29 @@ div > ul > li {
 
 .padding {
     padding-bottom: 20px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 854px) {
+    .menu-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .food-description {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .menu-items {
+        line-height: 3rem;
+    }
+
+    .menu-prices {
+        line-height: 3rem;
+    }
 }
