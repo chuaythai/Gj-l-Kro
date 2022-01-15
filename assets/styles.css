@@ -542,7 +542,7 @@ h2{
 
  /*gallery*/
 
- *, {
+ * {
 
      box-sizing: border-box;
  }
@@ -551,49 +551,33 @@ h2{
      scroll-behavior: smooth;
  }
  
- #top-logo {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     padding-top: 25px;
+
+ .nav2 {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 70px;
+    margin-top: 0;
+    
 }
 
-nav {
-     display: flex;
-     justify-content: center;
-}
+.nav2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
 
-nav li {
-display: inline;
-float: left;
-list-style-type: none;
-margin-right: 3vw;
-text-transform: capitalize;
-}
+  }
 
-nav li>a {
-     text-decoration: none;
-}
-
-nav>ul>li>a {
-     text-transform: uppercase;
-     color:rgb(0, 0, 0);
-}
-
-nav>ul>li>a:hover {
-     text-decoration: underline;
-     color: #C8AE67;
-     transition: all 0.3s ease;     
-}
  
-
  
  .p1 {
      font-family: roboto slab;
      font-weight: bold;
      font-size: 30px;
      margin-top: 55px;
-     margin-left: 640px;
+     margin-left: 550px;
      margin-bottom: 0;
      
      
@@ -627,6 +611,8 @@ nav>ul>li>a:hover {
      height: 520px;
      object-fit: cover;
      object-position: center;
+
+     
  }
 
 .banner {
@@ -634,36 +620,38 @@ nav>ul>li>a:hover {
  width: 90%;
 }
 
-.heading1 {
+.h4 {
     position: absolute;
-    top: 35%;
-    left: 30% ;
+    top: 20%;
+    left: 28% ;
     width: 100%;
     color: #F7F4E2;
+    font-size: 60px;
 
 }
 
 .paragraph1 {
     position: absolute;
-    top: 44%;
+    top: 46%;
     left: 30% ;
     width: 100%;
     color: #F7F4E2;
 }
  
-.heading2 {
+h5 {
     position: absolute;
-    top: 35%;
-    left: 30% ;
+    top: 15%;
+    left: 28% ;
     width: 100%;
     color: #000000;
+    font-size: 60px;
 
 }
 
 .paragraph2 {
     position: absolute;
-    top: 44%;
-    left: 30% ;
+    top: 46%;
+    left: 29% ;
     width: 100%;
     color: #000000;
 }
@@ -671,34 +659,47 @@ nav>ul>li>a:hover {
 
 
 
- .heading3 {
+ h6 {
     position: absolute;
-    top: 35%;
-    left: 22% ;
+    top: 1%;
+    left: 27% ;
+    width: 100%;
+    color: #ffffff;
+    font-size: 60px;
+ }
+
+ .h5 {
+    position: absolute;
+    top: 5%;
+    left: 27% ;
     width: 100%;
     color: #000000;
+    font-size: 60px;
  }
 
  .paragraph3 {
     position: absolute;
-    top: 44%;
-    left: 23% ;
+    top: 50%;
+    left: 28% ;
     width: 100%;
     color: #000000;
  }
 
- .heading4 {
+
+
+ .paragraph4 {
     position: absolute;
-    top: 35%;
-    left: 22% ;
+    top: 55%;
+    left: 27% ;
     width: 100%;
     color: #ffffff;
  }
 
- .paragraph4 {
+ .paragraph5 {
     position: absolute;
-    top: 44%;
-    left: 23% ;
+    top: 60%;
+    left: 30% ;
     width: 100%;
-    color: #ffffff;
+    color: #000000;
  }
+ 
