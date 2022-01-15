@@ -11,30 +11,45 @@ body, html {
      height: 100%;
      width: 100vw;
      padding:0;
+     margin:0;
      box-sizing: border-box;
      font-family: 'Roboto slab', serif;
 }
 
 /* Nav*/
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menu";
+}
+
 .logo{
-    display: block;
     width: 250px;
     margin-top: 70px;
-    margin-left: 70px;
+    margin-left: 50px;
+}
+
+.menu{
+    padding-top: 60px;
 }
 
 nav>ul{
     display: inline-block;
-    margin-left: 35%;
+    margin-left: 200px;
     margin-top: 98px;
    
+}
+
+nav ul li{
+    margin-top: 1em;
 }
 
 nav li {
 display: inline;
 float: left;
 list-style-type: none;
-margin-right: 3vw;
+margin-right: 1vw;
 text-transform: capitalize;
 }
 
@@ -44,16 +59,49 @@ nav>ul>li>a {
      color:rgb(0, 0, 0);
 }
 
-#reservation-nav{
+#reservation-cta{
     font-weight: 500;
     background-color: #C8AE67;
-    padding: 8px;
+    padding: 2px;
 }
 
 nav>ul>li>a:hover {
      text-decoration: underline;
      transition: all 0.3s ease;     
 }
+
+@media (max-width: 1313px){
+    #reservation-nav{
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .header-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "logo"
+        "menu";
+    }
+    .hero-container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "hero-image"
+        "hero-text";
+    }
+    .hero-text{
+        grid-area: hero-text;
+        padding-left: 80px;
+        padding-top: 100px;
+        width: 100%;
+    }
+}
+
 
 /* nav ends here, hero starts here*/
 
@@ -86,8 +134,10 @@ nav>ul>li>a:hover {
     padding-top:60px;
 }
 
-#hero-button{
+.hero-button{
     margin-left:0;
+    font-family: 'Roboto slab', serif;
+    font-weight: bold;
 }
 
 @media (max-width: 767px){
@@ -106,9 +156,6 @@ nav>ul>li>a:hover {
     }
     .hero-image{
         display: none;
-    }
-    .logo{
-        padding-left: 100px;
     }
 }
 
@@ -178,7 +225,7 @@ padding-left: 80px;
     position: relative;
     top: 60px;
     left: -70px;
-    width: 60%;
+    width: 55%;
     height: 50px;
     padding: 12px 20px;
     margin-top: 20px;
@@ -194,7 +241,7 @@ input[type="submit"] {
     height: 50px;
     border: 1px solid #C8AE67;
     border-radius: 50px;
-    margin-left: 500px;
+    margin-left: 550px;
     margin-top: -51px;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -228,7 +275,7 @@ label[for="terms"]{
     margin-left: 80px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1266px) {
     .promotion{
         display:grid;
         grid-template-columns: 1fr;
@@ -242,10 +289,12 @@ label[for="terms"]{
             height: 50px;
             border: 1px solid #C8AE67;
             border-radius: 50px;
-            margin-left: 30px;
+            margin-left: 30%;
             margin-top: 20px;
             font-size: 1.3rem;
             text-transform: uppercase;
+        }
+        input[type="email"] {
         }
     }
 
@@ -275,6 +324,23 @@ label[for="terms"]{
     input[type="checkbox"] {
         font-size: 0.9rem;
     }
+}
+@media screen and (max-width: 390px){
+    .promotion h2{
+        font-size: 1.6rem;
+        width: 200px;
+    }
+    .promotion h4{
+        font-size: 1rem;
+        width: 250px;
+    }
+    .promotion input[type="email"]{
+        width: 260px;
+    }
+    input[type="checkbox"] {
+        font-size: 0.8rem;
+    }
+
 }
 
 /*reservation page*/
@@ -521,6 +587,7 @@ margin-right: -1vw;
 .grid-section>p {
      margin-top: 150px;
      margin-left: 160px;
+     margin-bottom: 50px;
      width: 50%;
      font-size: 33px;
      text-align: left;
@@ -550,6 +617,12 @@ margin-right: -1vw;
      grid-area: content6;
 }
 
+#menu-button{
+    margin-left: 150px;
+    font-family: 'Roboto slab', serif;
+    margin-bottom: 100px; 
+}
+
 @media screen and (max-width: 767px) {
     .grid-container {
         display: grid;
@@ -559,40 +632,13 @@ margin-right: -1vw;
         "content3" "content4"
         "content6" "content5";
    }
+   .grid-section>p {
+       font-size: 28px;
+       padding-bottom: 80px;
+   }
 }
 
-/* history 
-
-.history {
-     width: 99vw;
-     height: 100vh;
-     background-color: #C8AE67;
-}
-
-.history-text1{
-     width: 50vw;
-     height: 40vh;
-     margin-left: 50px;
-     padding-top: 100px;
-     font-size: 33px;
-}
-
-.history-text2{
-     width: 50vw;
-     height: 40vh;
-     margin-left: 50px;
-     margin-top: 60px;
-     font-size: 22px;
-}
-
-.history-image{
-     background-image: url(images/img1.png);
-     width: 40vw;
-     height: 100vh;
-     float:right;
-}
-
-/*Reservations*/
+/* Reserve an event section home page */
 
 .reservations-events {
      display: grid;
@@ -679,9 +725,21 @@ margin-right: -1vw;
  }
 
  .footer-button{
-    background-color: #2F2220;
-    border: solid #F7F4E2 2px;
-    color:#F7F4E2;
+    background-color: #F7F4E2;
+    border: solid #ad9759 2px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-family: roboto slab;
+}
+
+.footer-button-reserve{
+    background-color: #F7F4E2;
+    border: solid #ad9759 2px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-family: roboto slab;
 }
 
 .footer-button:hover{
@@ -743,19 +801,22 @@ margin-right: -1vw;
      display: inline-block;
      height: 50px;
      width: 50px;
-     background-color: white;
-     margin: 0 15px 20px 0;
+     background-color: #F7F4E2;
+     margin-top: 10px;
      text-align: center ;
      line-height: 50px;
      border-radius: 50%;
      color: black;
      transition: all 0.5s ease;
+     margin-left: 40px;
  }
+
+
  .footer-col .social-links a:hover{
      color: black;
      background-color: #C8AE67;
  }
- 
+
 #click-here{
     padding-top: 20px;
 }
@@ -767,6 +828,7 @@ margin-right: -1vw;
     border-top: solid 1px white;
     text-align: center;
     padding-bottom: 3px;
+    margin-top: 60px;
 
 }
 
@@ -784,14 +846,11 @@ margin-right: -1vw;
  }
 
  /*gallery*/
-
- *, {
-
-     box-sizing: border-box;
- }
  
  body, html {
      scroll-behavior: smooth;
+     box-sizing: border-box;
+
  }
  
  #top-logo {
