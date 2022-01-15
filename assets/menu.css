@@ -11,56 +11,80 @@ body, html {
     height: 100%;
     width: 100vw;
     padding:0;
+    margin:0;
     box-sizing: border-box;
     font-family: 'Roboto slab', serif;
 }
 
-/* Nav*/
-.logo{
-   display: block;
-   width: 250px;
-   margin-top: 70px;
-   margin-left: 70px;
+/* Nav */
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menu";
 }
 
-nav {
-    height: 50px;
+.logo{
+    width: 250px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.menu{
+    padding-top: 30px;
 }
 
 nav>ul{
-   display: inline-block;
-   margin-left: 35%;
-   margin-top: 98px;
-  
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 98px;
+   
+}
+
+nav ul li{
+    margin-top: 1em;
 }
 
 nav li {
 display: inline;
 float: left;
 list-style-type: none;
-margin-right: 3vw;
+margin-right: 1vw;
 text-transform: capitalize;
 }
 
 nav>ul>li>a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color:rgb(0, 0, 0);
+     text-transform: uppercase;
+     text-decoration: none;
+     color:rgb(0, 0, 0);
 }
 
-#reservation-nav{
-   font-weight: 500;
-   background-color: #C8AE67;
-   padding: 8px;
+#reservation-cta{
+    font-weight: 500;
+    background-color: #C8AE67;
+    padding: 2px;
 }
 
 nav>ul>li>a:hover {
-    text-decoration: underline;
-    transition: all 0.3s ease;     
+     text-decoration: underline;
+     transition: all 0.3s ease;     
 }
 
-/* MENU section starts here */
+@media (max-width: 1313px){
+    #reservation-nav{
+        margin-top: 40px;
+    }
 
-h1 {
-    padding-top: 100px;
 }
+
+@media (max-width: 1000px){
+    .header-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "logo"
+        "menu";
+    }
+}
+
+/* MENU section starts here */  
