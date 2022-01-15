@@ -22,6 +22,7 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo menu";
+
 }
 
 .logo{
@@ -31,14 +32,13 @@ body, html {
 }
 
 .menu{
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 nav>ul{
     display: inline-block;
     margin-left: 200px;
     margin-top: 98px;
-   
 }
 
 nav ul li{
@@ -53,7 +53,7 @@ margin-right: 1vw;
 text-transform: capitalize;
 }
 
-nav>ul>li>a {
+nav>div>ul>li>a {
      text-transform: uppercase;
      text-decoration: none;
      color:rgb(0, 0, 0);
@@ -71,7 +71,7 @@ nav>ul>li>a:hover {
 }
 
 @media (max-width: 1313px){
-    #reservation-nav{
+    #reservation-cta{
         margin-top: 40px;
     }
 
@@ -87,4 +87,100 @@ nav>ul>li>a:hover {
     }
 }
 
-/* MENU section starts here */  
+/* MENU main starts here */  
+
+/* Secondary navigation for menu */
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-nav {
+    display: flex;
+    text-transform: uppercase;    
+    list-style-type: none;
+    margin-left: 32%;
+    margin-right: auto;
+}
+
+main > ul > li + li {
+    padding-left: 30px;
+}
+
+/* Lunch section */
+
+.background {
+    background-color: #3A4A48;
+    margin: 50px;
+    color: #F7F4E2;
+}
+
+h2 {
+    color: #F7F4E2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.serving-hours {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+h3 {
+    color: #F7F4E2;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F7F4E2;
+    padding-bottom: 1em;
+}
+
+div > ul > li {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.food-description {
+    color: #C8AE67;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+
+/* Grid for the menu items and prices*/
+
+.menu-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "menu-items" "menu-prices";
+}
+
+.menu-items {
+    grid-area: menu-items;
+}
+
+.menu-prices {
+    grid-area: menu-prices;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    padding-right: 20px;
+}
+
+.none {
+    color: #3A4A48;
+    padding-bottom: 25px;
+}
+
+.gourmet-h3 {
+    color: #F7F4E2;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3A4A48;
+}
+
+.padding {
+    padding-bottom: 20px;
+}
