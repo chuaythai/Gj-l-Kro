@@ -1047,4 +1047,141 @@ h5 {
     width: 100%;
     color: #000000;
  }
- 
+
+main {
+    width: 100%;
+}
+
+.our_story_header {
+    height: 90vh;
+    background: url(images/family_drawin.png) center center no-repeat;
+    background-size: cover;
+}
+
+.our_story_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section_text_side {
+    position: relative;
+    min-width: 400px;
+}
+
+.section_text_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.section_image {
+    min-width: 400px;
+}
+
+.section_header {
+    font-size: 40px;
+}
+
+.our_story_section h2 {
+    font-size: 40px;
+}
+
+.section_text {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* YOUNG COUPLE SECTION */
+.young_couple_section {
+    flex-direction: row;
+}
+
+.young_couple_section >
+.section_text_side {
+    height: 800px;
+    flex-grow: 1;
+}
+
+.young_couple_section >
+.section_image {
+    height: 800px;
+    flex-grow: 1;
+    background: url(images/couple.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+/* HISTORY SECTION */
+.history_section {
+    flex-direction: row;
+    background-color: #c8ae67;
+}
+
+.history_section >
+.section_text_side {
+    height: 800px;
+    flex-grow: 2;
+}
+
+.history_section >
+.section_image {
+    height: 800px;
+    flex-grow: 1;
+    background: url(images/wine-with-glasses.png) left center no-repeat;
+    background-size: contain;
+}
+
+.history_section_text_1 {
+    font-size: 30px;
+}
+
+.history_section_text_2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.year_span {
+    color: #f7f4e3;
+}
+
+/* MODERN TWIST SECTION */
+.modern_twist_section {
+    flex-direction: row-reverse;
+}
+
+.modern_twist_section >
+.section_text_side {
+    height: 600px;
+    flex-grow: 1;
+}
+
+.modern_twist_section >
+.section_image {
+    height: 600px;
+    flex-grow: 1;
+    background: url(images/meal.png) center center no-repeat;
+    background-size: cover;
+}
+
+/* INGREDIENTS SECTION */
+.ingredients_section {
+    flex-direction: row;
+}
+
+.ingredients_section >
+.section_text_side {
+    height: 600px;
+    flex-grow: 1;
+}
+
+.ingredients_section >
+.section_image {
+    height: 600px;
+    flex-grow: 1;
+    background: url(images/pexels-daria-shevtsova-1508666.jpg) center center no-repeat;
+    background-size: cover;
+}
