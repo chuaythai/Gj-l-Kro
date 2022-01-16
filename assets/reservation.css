@@ -248,6 +248,28 @@ text-transform: capitalize;
     flex-wrap:wrap;
 }
 
+button {
+    font-size: 1rem;
+    font-weight: 300;
+     background-color: #F7F4E2;
+     border-style: groove;
+     border-radius: 50px;
+     height: 45px;
+     width: 200px;
+     text-transform: uppercase;
+     border-color:#C8AE67;
+     margin: 0 auto;
+
+}
+
+button:hover{
+     background-color: #cfcaae;
+     border-width: 2px;
+     transition: all 0.3s ease;
+     color:black;
+     cursor: pointer;
+}
+
 .footer-button{
    background-color: #F7F4E2;
    border: solid #ad9759 2px;
@@ -266,11 +288,6 @@ text-transform: capitalize;
    font-family: roboto slab;
 }
 
-.footer-button:hover{
-   background-color: #ad9759;
-   font-size: 1.1rem;
-   border-width: 3px;
-}
 
 .footer-container>a img{
    margin-left: 30px;
@@ -441,11 +458,6 @@ text-transform: capitalize;
    font-family: roboto slab;
 }
 
-.footer-button:hover{
-   background-color: #ad9759;
-   font-size: 1.1rem;
-   border-width: 3px;
-}
 
 .footer-container>a img{
    margin-left: 30px;
@@ -614,12 +626,6 @@ text-transform: capitalize;
     margin-left: 10px;
     margin-top: 30px;
     font-family: roboto slab;
-}
-
-.footer-button:hover{
-    background-color: #ad9759;
-    font-size: 1.1rem;
-    border-width: 3px;
 }
 
 .footer-container>a img{
