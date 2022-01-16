@@ -552,7 +552,7 @@ margin-right: -1vw;
 
 
  .container2 .button {
-    margin-top: 3vw;
+    margin-top: 8vw;
     margin-left: 13.5vw;
     font-size: 22px;
     font-family: 'Roboto Slab', serif;
@@ -567,7 +567,30 @@ margin-right: -1vw;
      color: #F7F4E2;
      background:#3A4A48;
  }
-                     
+
+ .form-field input[type="checkbox"] {
+    margin:0;
+    padding:0;
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+   }
+
+   #message{
+       margin-bottom: 20px;
+   }
+
+   #policy{
+       margin: 0;
+       padding: 0;
+   }
+
+   #terms2{
+       margin-top: 0px;
+   }
+                    
                                 
 
 /* Home page Grid*/
@@ -748,8 +771,9 @@ margin-right: -1vw;
     border-width: 3px;
 }
 
-.footer-container>img{
+.footer-container>a img{
     margin-left: 30px;
+    margin-top:0;
 }
 
  .footer-col ul{
@@ -818,7 +842,7 @@ margin-right: -1vw;
  }
 
 #click-here{
-    padding-top: 20px;
+    padding-top: 70px;
 }
 
 .copyright{
@@ -877,23 +901,39 @@ margin-right: -1vw;
 
  
  
- .p1 {
+ .h1-gallery {
      font-family: roboto slab;
      font-weight: bold;
      font-size: 30px;
-     margin-top: 55px;
-     margin-left: 570px;
-     margin-bottom: 0;
+     text-align: center;
+     text-transform: uppercase;
+    }
      
      
- }
+    .nav2 .menu-nav ul{
+        display: flex;
+        text-transform: uppercase;    
+        list-style-type: none;
+        justify-content: center;
+    }
+    
+     .nav2 > ul > li + li {
+        padding-left: 30px;
+    }
+    
+     .nav2 > ul > li > a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
 
  
- .p2 {
+ .h2-gallery {
      font-family: roboto slab;
      font-weight: bold;
      font-size: 22px;
-     margin-left: 115px;
+     text-align: center;
  }
 
 
